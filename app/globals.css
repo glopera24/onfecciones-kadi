@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-ink antialiased;
+    font-feature-settings: "ss01" on, "ss02" on;
+  }
+
+  ::selection {
+    @apply bg-wine text-ivory;
+  }
+
+  /* Foco visible accesible en todos los elementos interactivos */
+  :focus-visible {
+    outline: 2px solid #6e2142;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-3xl px-6;
+  }
+}
+
+/* Modo oscuro opcional, activado con clase .dark en <html> */
+.dark body {
+  @apply bg-ink text-ivory;
+}
+.dark .bg-ivory { background-color: #211B22; }
+.dark .bg-sand { background-color: #2C2530; }
+.dark .text-ink { color: #FAF6F1; }
+.dark .border-sand { border-color: #3A3138; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
