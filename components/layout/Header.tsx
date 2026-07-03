@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -34,13 +35,17 @@ export default function Header() {
           : "border-b border-transparent bg-transparent"
       )}
     >
-      <div className="container flex h-20 items-center justify-between">
-        <Link
-          href="/"
-          className="font-display text-2xl font-medium tracking-tight text-ink"
-        >
-          Kadi<span className="text-wine">.</span>
-        </Link>
+   <div className="container flex h-24 items-center justify-between">
+        <Link href="/" className="flex items-center">
+<Image
+  src="/images/logo/logo.png"
+  alt="Confecciones Kadi SAS"
+  width={320}
+  height={140}
+  priority
+  className="h-16 md:h-20 w-auto object-contain transition-transform duration-300 hover:scale-105"
+/>
+	</Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Navegación principal">
           {NAV_LINKS.map((link) => (

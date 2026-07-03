@@ -4,6 +4,7 @@ export const SITE = {
   legalName: "CONFECCIONES KADI SAS",
   nit: "901.521.683-4",
   city: "Bogotá, Colombia",
+  address: "Calle 58 Sur # 97B-52, Bogotá D.C., Colombia",
   email: "kadiconfecciones@gmail.com",
   phone: "3186521168",
   phoneDisplay: "+57 318 652 1168",

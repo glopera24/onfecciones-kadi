@@ -20,14 +20,17 @@ export default function PortafolioPage() {
           <span className="text-xs font-semibold uppercase tracking-widest text-wine">
             Portafolio
           </span>
-          <h1 className="mt-4 text-balance font-display text-4xl text-ink sm:text-5xl">
-            Producción real, resultados consistentes
-          </h1>
-          <p className="mt-6 leading-relaxed text-ink/70">
-            Una muestra de los tipos de proyectos que desarrollamos para
-            nuestros clientes. Las imágenes son ilustrativas del estilo y
-            calidad de trabajo.
-          </p>
+<h1 className="mt-4 text-balance font-display text-4xl text-ink sm:text-5xl">
+  Nuestras Referencias
+</h1>
+
+<p className="mt-6 leading-relaxed text-ink/70">
+  Cada prenda refleja nuestra experiencia en diseño, confección y producción.
+  Estas referencias corresponden a algunos de los desarrollos realizados por
+  Confecciones Kadi S.A.S. para diferentes marcas y proyectos. Fabricamos bajo
+  especificaciones de cada cliente, garantizando calidad, cumplimiento y
+  excelentes acabados.
+</p>
         </div>
 
         <div className="mt-16">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PlantPreview from "@/components/sections/PlantPreview";
 import Hero from "@/components/sections/Hero";
 import StatsBar from "@/components/sections/StatsBar";
 import ServicesGrid from "@/components/sections/ServicesGrid";
@@ -8,6 +9,7 @@ import ClientsLogos from "@/components/sections/ClientsLogos";
 import CTASection from "@/components/sections/CTASection";
 import SeamDivider from "@/components/ui/seam-divider";
 import { Button } from "@/components/ui/button";
+
 
 export const metadata: Metadata = {
   title: "Fabricante de moda íntima y confección para marcas en Bogotá",
@@ -55,20 +57,21 @@ export default function HomePage() {
               <Link href="/proceso">Ver proceso completo</Link>
             </Button>
           </div>
-          <ProcessTimeline />
-        </div>
-      </section>
+         <ProcessTimeline />
+</div>
+</section>
 
-      <section className="bg-sand/40 py-24">
-        <div className="container">
-          <h2 className="text-center font-display text-3xl text-ink">
-            Trabajamos con
-          </h2>
-          <div className="mt-10">
-            <ClientsLogos />
-          </div>
-        </div>
-      </section>
+<PlantPreview />
+<section className="bg-sand/40 py-24">
+  <div className="container">
+    <h2 className="text-center font-display text-3xl text-ink">
+      Trabajamos con
+    </h2>
+    <div className="mt-10">
+      <ClientsLogos />
+    </div>
+  </div>
+</section>
 
       <CTASection />
     </>
