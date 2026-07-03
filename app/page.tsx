@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PlantPreview from "@/components/sections/PlantPreview";
+import BrochureCard from "@/components/sections/BrochureCard";
 import Hero from "@/components/sections/Hero";
 import StatsBar from "@/components/sections/StatsBar";
 import ServicesGrid from "@/components/sections/ServicesGrid";
@@ -56,6 +57,9 @@ export default function HomePage() {
             <Button asChild variant="outline" className="mt-8">
               <Link href="/proceso">Ver proceso completo</Link>
             </Button>
+
+            <BrochureCard />
+            
           </div>
          <ProcessTimeline />
 </div>

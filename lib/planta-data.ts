@@ -27,8 +27,4 @@ export const plantaImages = [
     title: "Producción",
     image: "/images/planta/TRABAJADORAS-2.jpeg",
   },
-  {
-    title: "Bodega",
-    image: "/images/planta/AREABODEGA-1.jpeg",
-  },
 ];
